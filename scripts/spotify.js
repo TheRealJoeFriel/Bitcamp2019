@@ -3,10 +3,13 @@ var RedirectURI = 'http://therealjoefriel.github.io/Bitcamp2019/callback.html'
 var responseType = 'token';
 
 function getURL() {
-    'https://accounts.spotify.com/authorize?client_id='+ClientID+
-        '&redirect_uri=' + RedirectURI + 
-        '&scope=playlist-read-private%20playlist-modify%20playlist-modify-private' +
-        '&response_type=' + responseType;
+    if (location.host == ''){
+        RedirectURI = 'callback.html'
+    }
+    return 'https://accounts.spotify.com/authorize?client_id='+ClientID+
+    '&redirect_uri=' + RedirectURI + 
+    '&scope=playlist-read-private%20playlist-modify%20playlist-modify-private' +
+    '&response_type=' + responseType;
 }
 
 function sendRequest(url) {
