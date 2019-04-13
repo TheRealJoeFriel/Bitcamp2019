@@ -12,7 +12,7 @@ function connect() {
 function search(searchQuery) {
     var searchResult = "https://api.spotify.com/v1/${searchQuery}";
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", theUrl, false); 
+    xmlHttp.open("GET", searchResult, false); 
     xmlHttp.send(null);
     return xmlHttp.responseText;
 }
