@@ -1,5 +1,5 @@
 var ClientID = '154106d34b2d4c9b8a8a1c55561771ce'
-var RedirectURI = 'http://spotify.com'
+var RedirectURI = 'http://therealjoefriel.github.io/callback.html'
 var responseType = 'token';
 
 function connect() {
