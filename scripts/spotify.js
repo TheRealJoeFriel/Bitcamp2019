@@ -9,10 +9,19 @@ function getURL() {
         '&response_type=' + responseType;
 }
 
+function sendRequest(url) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false); 
+    xmlHttp.send(null);
+    return xmlHttp.responseText;
+}
+
 function connect() {
     return {
         login: function() {
             var url = getURL();
+
+            var response = sendRequest(url);
 
             var width = 400, height = 600, left = (screen.width / 2) - (width / 2), top = (screen.height / 2) - (height / 2);
 
@@ -28,7 +37,7 @@ function connect() {
             var token = localStorage.getItem('pa_token', '');
             return token;
         },
-        
+
     }
 
 }
