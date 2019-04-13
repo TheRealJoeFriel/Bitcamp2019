@@ -21,13 +21,18 @@
       </div>
       
       <div>
-        <button type="button" class="btn btn-primary" id="buttonboi" onclick='test()'>Primary</button>
-
-        <input id="playlist-search" type="text" class="form-control" placeholder="Search playlists...">
+          <button type="button" class="btn btn-primary" id="buttonboi" onclick='test()'>Primary</button>
+          <input id="playlist-search" type="text" class="form-control" placeholder="Search playlists...">
+          <script>
+            var searchElement = document.getElementById('playlist-search');
+            searchElement.addEventListener('input', search); 
+          </script>
       </div>
+
       <div class="col-xs-12 text-center">
           <iframe src="https://open.spotify.com/embed/track/6u7jPi22kF8CTQ3rb9DHE7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
+
     </div>
   </body>
  </html>
