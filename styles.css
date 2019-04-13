@@ -1,5 +1,13 @@
-html, body {
+body {
     background-image: url("images/beerpong.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.vertical-top {
+    margin-top: 2.5%;
+}
+
+.text {
+    color: white;
 }
