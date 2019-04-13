@@ -50,12 +50,14 @@ var module = {
 
     },
 
-    search = function(searchQuery) {
-        var searchResult = "https://api.spotify.com/v1/${searchQuery}";
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", searchResult, false); 
-        xmlHttp.send(null);
-        return xmlHttp.responseText;
+    search = function() {
+        var searchText = document.getElementById('playlist-search').innerHTML;
+        alert(searchText);
+        // var searchResult = "https://api.spotify.com/v1/${searchQuery}";
+        // var xmlHttp = new XMLHttpRequest();
+        // xmlHttp.open("GET", searchResult, false); 
+        // xmlHttp.send(null);
+        // return xmlHttp.responseText;
     },
 
     loadPlaylist = function() {
