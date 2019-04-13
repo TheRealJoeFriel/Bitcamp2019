@@ -1,5 +1,5 @@
 var ClientID = '154106d34b2d4c9b8a8a1c55561771ce'
-var RedirectURI = 'http://therealjoefriel.github.io/callback.html'
+var RedirectURI = 'http://therealjoefriel.github.io/Bitcamp2019/callback.html'
 var responseType = 'token';
 
 function connect() {
