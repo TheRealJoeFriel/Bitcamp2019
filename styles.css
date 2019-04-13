@@ -1,9 +1,9 @@
-html, body {
+body {
     background-image: url("images/beerpong.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-    position: relative;
-    min-height: 100%;
-    padding-bottom: 65px;
+.vertical-top {
+    margin-top: 2.5%;
 }
