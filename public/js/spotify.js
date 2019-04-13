@@ -69,5 +69,5 @@ var module = {
     },
 
     test = function() {
-        alert("hello word");
+        alert("hello world");
     }]};
