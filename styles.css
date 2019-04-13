@@ -1,7 +1,17 @@
-body {
-    background-image: url("images/beerpong.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+#background img {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+
+    /* background-image: url("images/beerpong.jpg"); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .vertical-top {
