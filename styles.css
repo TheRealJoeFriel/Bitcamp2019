@@ -6,12 +6,8 @@
     top: 0px; 
     z-index: -1;
 
-    /* background-image: url("images/beerpong.jpg"); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 }
 
 .vertical-top {
