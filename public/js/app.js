@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var spotify = require('./spotify.js');
 
 var hostname = "localhost";
 var port = "8080";
@@ -13,3 +14,5 @@ app.get('/', function(req, res) {
 
 app.listen(port);
 console.log(`Running on ${hostname}:${port}`);
+
+console.log(spotify);
